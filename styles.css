@@ -715,6 +715,11 @@ body p {
 }
 
 @media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
     .hero-text h1 {
         font-size: 28px;
         font-weight: 500; /* Peso aún más ligero para pantallas pequeñas */
