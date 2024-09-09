@@ -54,9 +54,52 @@ body p {
     font-size: 16px;
 }
 
+/* Estilos generales para los botones y el menú */
 .cta-buttons {
     display: flex;
     gap: 15px;
+    align-items: center;
+}
+
+/* Estilos del menú hamburguesa */
+.hamburger-menu {
+    display: none; /* Oculto por defecto */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+/* Estilos del menú desplegable */
+.dropdown-menu {
+    display: none; /* Oculto por defecto */
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #5C48E0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.dropdown-menu a {
+    text-align: center;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.show-menu {
+    display: flex; /* Muestra el menú */
 }
 
 .btn {
@@ -726,15 +769,15 @@ body p {
     }
 
     .cta-buttons {
-        flex-direction: column; /* Coloca los botones uno debajo del otro */
-        gap: 10px; /* Ajusta el espacio entre los botones */
-        align-items: center; /* Centra los botones horizontalmente */
+        justify-content: flex-end;
     }
 
     .cta-buttons .btn {
-        width: 100%; /* Haz que los botones ocupen todo el ancho disponible */
-        padding: 12px 0; /* Ajusta el relleno interno para que no sean demasiado altos */
-        font-size: 14px; /* Ajusta el tamaño del texto para pantallas pequeñas */
+        display: none; /* Oculta los botones regulares */
+    }
+
+    .hamburger-menu {
+        display: flex; /* Muestra el menú hamburguesa */
     }
 
 

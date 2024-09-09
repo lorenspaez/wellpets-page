@@ -24,8 +24,18 @@
                 <a href="#">Seguimiento Médico</a>
             </nav-->
             <div class="cta-buttons">
-                <a href="#" class="btn contact">Contáctanos</a>
-                <a href="#" class="btn login">Soy Veterinario</a>
+                <!-- Botón del menú hamburguesa -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <span class="hamburger-icon"></span>
+                    <span class="hamburger-icon"></span>
+                    <span class="hamburger-icon"></span>
+                </div>
+                
+                <!-- Menú desplegable -->
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <a href="#" class="btn contact">Contáctanos</a>
+                    <a href="#" class="btn login">Soy Veterinario</a>
+                </div>
             </div>
         </div>
     </header>
@@ -268,3 +278,12 @@
       
 </body>
 </html>
+
+<script>
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+
+    hamburgerMenu.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('show-menu');
+    });
+</script>
