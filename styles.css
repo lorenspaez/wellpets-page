@@ -127,9 +127,8 @@ body p {
 }
 
 .hero-text h1 {
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 61.04px;
-    font-style: normal;
     font-weight: 800;
     line-height: 67px;
     letter-spacing: 0.61px;
@@ -548,13 +547,13 @@ body p {
     margin-bottom: 20px;
     border: none;
     border-radius: 10px;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contact-form textarea {
     height: 100px;
     resize: none;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contact-form button {
@@ -566,7 +565,7 @@ body p {
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contact-form button:hover {
@@ -575,6 +574,14 @@ body p {
 
 /* Responsividad */
 @media (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 36px;
+        font-weight: 700; /* Peso menor para pantallas medianas */
+        line-height: 42px; /* Ajuste del espaciado vertical */
+        letter-spacing: 0.5px;
+
+    }
+
     .contact-container {
         flex-direction: column;
         border-radius: 15px;
@@ -628,6 +635,9 @@ body p {
 
     .hero-text h1 {
         font-size: 32px;
+        font-weight: 600; /* Ajuste adicional del peso */
+        line-height: 38px;
+        letter-spacing: 0.4px;
     }
 
     .hero-text p {
@@ -707,6 +717,9 @@ body p {
 @media (max-width: 480px) {
     .hero-text h1 {
         font-size: 28px;
+        font-weight: 500; /* Peso aún más ligero para pantallas pequeñas */
+        line-height: 34px;
+        letter-spacing: 0.3px;
     }
 
     .store-buttons img {
