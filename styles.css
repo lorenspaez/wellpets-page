@@ -725,6 +725,19 @@ body p {
         gap: 10px;
     }
 
+    .cta-buttons {
+        flex-direction: column; /* Coloca los botones uno debajo del otro */
+        gap: 10px; /* Ajusta el espacio entre los botones */
+        align-items: center; /* Centra los botones horizontalmente */
+    }
+
+    .cta-buttons .btn {
+        width: 100%; /* Haz que los botones ocupen todo el ancho disponible */
+        padding: 12px 0; /* Ajusta el relleno interno para que no sean demasiado altos */
+        font-size: 14px; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+
+
     .hero-text h1 {
         font-size: 28px;
         font-weight: 500; /* Peso aún más ligero para pantallas pequeñas */
