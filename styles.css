@@ -63,7 +63,7 @@ body p {
 
 /* Estilos del menú hamburguesa */
 .hamburger-menu {
-    display: none; /* Oculto por defecto */
+    display: none; /* Oculto por defecto en pantallas grandes */
     flex-direction: column;
     justify-content: space-around;
     width: 30px;
@@ -99,7 +99,7 @@ body p {
 }
 
 .show-menu {
-    display: flex; /* Muestra el menú */
+    display: flex;
 }
 
 .btn {
@@ -768,18 +768,17 @@ body p {
         gap: 10px;
     }
 
-    .cta-buttons {
-        justify-content: flex-end;
-    }
-
     .cta-buttons .btn {
-        display: none; /* Oculta los botones regulares */
+        display: none; /* Oculta los botones regulares en pantallas pequeñas */
     }
 
     .hamburger-menu {
         display: flex; /* Muestra el menú hamburguesa */
     }
 
+    .dropdown-menu {
+        display: none; /* El menú desplegable se ocultará hasta que se haga clic */
+    }
 
     .hero-text h1 {
         font-size: 28px;
