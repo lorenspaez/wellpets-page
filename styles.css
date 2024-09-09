@@ -719,7 +719,12 @@ body p {
         flex-direction: column;
         text-align: center;
     }
-    
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .hero-text h1 {
         font-size: 28px;
         font-weight: 500; /* Peso aún más ligero para pantallas pequeñas */
