@@ -15,7 +15,7 @@
         <div class="container">
             <div class="logo">
                 <img src="assets/Vector.png" alt="WellPets Logo">
-                <span>WELLPETS <br><small>BY BIENESTAR ANIMAL</small></span>
+                <span>WELLPETS <br><small><a href="https://www.bienestaranimal.app" target="_blank">BY BIENESTAR ANIMAL</a></small></span>
             </div>
             <!--nav class="nav-menu">
                 <a href="#">Inicio</a>
@@ -25,18 +25,6 @@
             <div class="cta-buttons">
                 <a href="#" class="btn contact">Contáctanos</a>
                 <a href="#" class="btn login">Soy Veterinario</a>
-
-                <input id="toggle1" type="checkbox" />
-                <label class="hamburger1" for="toggle1">
-                    <div class="top"></div>
-                    <div class="meat"></div>
-                    <div class="bottom"></div>
-                </label>
-
-                <nav class="menu1">
-                    <a href="#" class="btn contact">Contáctanos</a>
-                    <a href="#" class="btn login">Soy Veterinario</a>
-                </nav>
             </div>
         </div>
     </header>
@@ -51,9 +39,9 @@
                         <a href="#" class="store-button">
                             <img src="assets/playstore.png" alt="Google Play">
                         </a>
-                        <a href="#" class="store-button">
+                        <!--a href="#" class="store-button">
                             <img src="assets/appstore.png" alt="App Store">
-                        </a>
+                        </a-->
                     </div>
                 </div>
             </div>
@@ -240,7 +228,7 @@
           <div class="footer-links">
             <h4>Empresa</h4>
             <ul>
-                <li><a href="#">Bienestar Animal SPA</a></li>
+                <li><a href="https://www.bienestaranimal.app" target="_blank">Bienestar Animal SPA</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
           </div>
@@ -263,43 +251,12 @@
         </div>
       
         <div class="footer-bottom">
-            <p>© 2024 BIENESTAR ANIMAL SPA</p>
+            <span><a href="https://www.bienestaranimal.app" target="_blank">© 2024 BIENESTAR ANIMAL SPA</a></small></span>
             <div class="footer-bottom-links">
-                <a href="#">Condiciones de Uso</a>
-                <a href="#">Política de Privacidad</a>
+                <a href="condiciones.html">Condiciones de Uso</a>
+                <a href="politicas.html">Política de Privacidad</a>
             </div>
         </div>
     </footer>
-      
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    </script>
 </body>
 </html>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-    const hamburgerMenu = document.getElementById('hamburger-menu');
-    const dropdownMenu = document.getElementById('dropdown-menu');
-
-    if (hamburgerMenu && dropdownMenu) {
-        hamburgerMenu.addEventListener('click', function() {
-            console.log("Hamburger menu clicked");
-            console.log(dropdownMenu);
-            console.log(hamburgerMenu);
-            console.log(dropdownMenu.classList);
-            dropdownMenu.classList.toggle('show-menu');
-        });
-    } else {
-        console.log("Menu elements not found");
-    }
-    });
-</script>
-

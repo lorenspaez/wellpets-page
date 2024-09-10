@@ -54,91 +54,21 @@ body p {
     font-size: 16px;
 }
 
+.logo a {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    text-decoration: underline;
+}
+
 /* Estilos generales para los botones y el menú */
 .cta-buttons {
     display: flex;
     gap: 15px;
     align-items: center;
-}
-/* Estilos del menú hamburguesa */
-.hamburger1 {
-    height: 45px;
-    margin: 10px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    justify-items: center;
-    z-index: 120;
-}
-
-.hamburger1 div {
-    background-color: rgb(61, 61, 61);
-    position: relative;
-    width: 40px;
-    height: 5px;
-    margin-top: 7px;
-    transition: all 0.2s ease-in-out;
-}
-
-#toggle1 {
-    display: none;
-}
-
-#toggle1:checked + .hamburger1 .top {
-    transform: rotate(-45deg);
-    margin-top: 22.5px;
-}
-
-#toggle1:checked + .hamburger1 .meat {
-    transform: rotate(45deg);
-    margin-top: -5px;
-}
-
-#toggle1:checked + .hamburger1 .bottom {
-    transform: scale(0);
-}
-
-#toggle1:checked ~ .menu1 {
-    height: 340px;
-}
-
-/* Menu */
-.menu1 {
-    width: 100%;
-    background-color:transparent;
-    margin: 0;
-    display: grid;
-    grid-template-rows: 1fr repeat(4, 0.5fr);
-    grid-row-gap: 25px;
-    padding: 0;
-    list-style: none;
-    clear: both;
-    width: auto;
-    text-align: center;
-    height: 0px;
-    overflow: hidden;
-    transition: height .4s ease;
-    z-index: 120;
-}
-
-.menu1 a:first-child {
-    margin-top: 40px;
-}
-
-.menu1 a:last-child {
-    margin-bottom: 40px;
-}
-
-.link1 {
-    width: 100%;
-    margin: 0;
-    padding: 10px 0;
-    font: 700 20px 'Oswald', sans-serif;
-}
-
-.link1:hover {
-    background-color: #fff;
-    color: rgb(61, 61, 61);
-    transition: all 0.3s ease;
 }
 
 .btn {
@@ -227,7 +157,7 @@ body p {
 }
 
 .store-buttons img {
-    width: 150px;
+    width: 200px;
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -365,6 +295,36 @@ body p {
     font-size: 16px;
     margin-bottom: 20px;
     color: #333333;
+}
+
+.feature-text-v2 {
+    max-width: 800px;
+}
+
+.feature-text-v2 h1 {
+    font-size: 36px;
+    color: #7F73FF;
+    margin-bottom: 10px;
+}
+
+.feature-text-v2 h2 {
+    font-size: 32px;
+    color: #7F73FF;
+    margin-bottom: 10px;
+}
+
+.feature-text-v2 p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.feature-text-v2 ul {
+    color: #333333;
+}
+
+.feature-text-v2 ul li {
+    margin-bottom: 5px;
 }
 
 .feature-icons {
@@ -836,16 +796,9 @@ body p {
         gap: 10px;
     }
 
-    .cta-buttons .btn {
-        display: none;
-    }
-
-    .hamburger-menu {
-        display: flex;
-    }
-
-    .dropdown-menu {
-        display: none;
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
     }
 
     .hero-text h1 {
