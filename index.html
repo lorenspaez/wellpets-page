@@ -19,19 +19,19 @@
                 </a>
                 <span>WELLPETS <br><small><a href="https://www.bienestaranimal.app" target="_blank">BY BIENESTAR ANIMAL</a></small></span>
             </div>
-            <!--nav class="nav-menu">
-                <a href="#">Inicio</a>
-                <a href="#">Rescates y Educación</a>
-                <a href="#">Seguimiento Médico</a>
-            </nav-->
+            <nav class="nav-menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#rescates">Rescates y Educación</a>
+                <a href="#veterinarios">Seguimiento Médico</a>
+            </nav>
             <div class="cta-buttons">
-                <a href="#" class="btn contact">Contáctanos</a>
-                <a href="#" class="btn login">Soy Veterinario</a>
+                <a href="#contacto" class="btn contact">Contáctanos</a>
+                <a href="vets.html" class="btn login">Soy Veterinario</a>
             </div>
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="inicio">
         <div class="hero-container">
             <div class="hero-card">
                 <div class="hero-text">
@@ -41,9 +41,6 @@
                         <a href="#" class="store-button">
                             <img src="assets/playstore.png" alt="Google Play">
                         </a>
-                        <!--a href="#" class="store-button">
-                            <img src="assets/appstore.png" alt="App Store">
-                        </a-->
                     </div>
                 </div>
             </div>
@@ -63,14 +60,14 @@
                 <p>Buscamos optimizar el vínculo entre todos los participantes del bienestar animal, apoyando en los procesos de rescate y el seguimiento de la salud de nuestros peludos.</p>
                 <h3>Conoce sus funcionalidades:</h3>
                 <div class="features-buttons">
-                    <a href="#" class="btn-feature">Rescates y Educación</a>
-                    <a href="#" class="btn-feature">Seguimiento Médico y Veterinarias</a>
+                    <a href="#rescates" class="btn-feature">Rescates y Educación</a>
+                    <a href="#veterinarios" class="btn-feature">Seguimiento Médico y Veterinarias</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="features-v2">
+    <section class="features-v2" id="rescates">
         <div class="feature-container">
             <div class="feature-card">
                 <div class="feature-text">
@@ -133,7 +130,7 @@
         </div>
     </section>
 
-    <section class="features-v3">
+    <section class="features-v3" id="veterinarios">
         <div class="feature-container">
             <div class="feature-card">
                 <div class="feature-text-v3">
@@ -203,22 +200,29 @@
 
     <section class="features-v4">
         <div class="contact-container">
-          <div class="contact-image">
-            <img src="assets/rrss.png" alt="Imagen de contacto">
-          </div>
-      
-          <div class="contact-form">
-            <h2>¡Involúcrate!</h2>
-            <p>Contáctanos para obtener más información</p>
-            <form action="#" method="POST">
-              <input type="text" name="nombre" placeholder="Nombre Completo" required>
-              <input type="email" name="email" placeholder="Correo Electrónico" required>
-              <textarea name="mensaje" placeholder="Mensaje..." required></textarea>
-              <button type="submit">Enviar Mensaje</button>
-            </form>
-          </div>
+            <div class="contact-image">
+                <img src="assets/rrss.png" alt="Imagen de contacto">
+            </div>
+    
+            <div class="contact-form" id="contacto">
+                <h2>¡Involúcrate!</h2>
+                <p>Contáctanos para obtener más información</p>
+                <form action="https://formspree.io/f/mqakeabq" method="POST">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo" required>
+    
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" name="email" id="email" placeholder="Correo Electrónico" required>
+    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="message" id="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+    
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
         </div>
-    </section>      
+    </section>
+      
 
     <footer class="footer">
         <div class="footer-container">
@@ -241,15 +245,16 @@
             <h4>Soporte</h4>
             <ul>
                 <li><a href="mailto:contacto@bienestaranimal.app">contacto@bienestaranimal.app</a></li>
+                <li><a href="mailto:devs@bienestaranimal.app">devs@bienestaranimal.app</a></li>
             </ul>
           </div>
       
           <div class="footer-social">
             <h4>Síguenos:</h4>
             <ul class="custom-social">
-                <li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
-                <li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
-                <li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+                <!--li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li-->
+                <li><a href="https://www.instagram.com/wellpets.app"><span class="fa fa-brands fa-instagram"></span></a></li>
+                <!--li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li-->
             </ul>
         </div>
         </div>
